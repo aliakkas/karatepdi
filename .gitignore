@@ -3,6 +3,7 @@
 
 # Log file
 *.logChannel
+etl/log/*
 
 # BlueJ files
 *.ctxt
