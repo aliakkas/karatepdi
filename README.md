@@ -21,8 +21,6 @@ or
 ### Some endpoints you can call:
 
 ```
-http://127.0.0.1:9999/login
-http://127.0.0.1:9999/report/overview-tags.html
 http://127.0.0.1:9999/pdi/execute?filename=./etl/jb-test-query-db.kjb
 http://127.0.0.1:9999/karate/report?name=./etl/check-run-status.feature
 http://127.0.0.1:9999/karate/reporthtml?name=./etl/check-run-status.feature
