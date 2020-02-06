@@ -1,6 +1,6 @@
 # karatepdi
 
-This is a Spring Boot Rest application for automating ETL Testing using Behaviour Driven Development framework Karate. You can use it to execute PDI job/transformation or running Karate feature file to produce cucumber reports.  
+This is a Spring Boot Rest application for automating ETL testing using Behaviour Driven Development framework Karate and Pentaho Data Integration. You can use it to execute PDI job/transformation or running Karate feature file to produce cucumber reports.  
 
 # How to run
 
