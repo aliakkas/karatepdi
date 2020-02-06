@@ -11,7 +11,7 @@ Feature: Verify database schema changes
   Scenario: Get proccess instances details
   Run jb-test-execute-sql.kjb
     Given path 'pdi/execute'
-    And params { P_REPORT_TRANS_NAME: 'tr-test-execute-query', filename: '//Users/aliakkas/apps/spring/etl/jb-test-query-db.kjb' }
+    And params { P_REPORT_TRANS_NAME: 'tr-test-execute-query', filename: './etl/jb-test-query-db.kjb' }
     When method get
     * print response
     Then status 200

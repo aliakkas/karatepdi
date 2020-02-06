@@ -5,14 +5,11 @@ will receive a date field as input, convert it to the ISO8601 standard format an
     * url 'http://127.0.0.1:9999'
     * def setup = callonce read('pdi-cookies.feature')
     * cookies { 'JSESSIONID': #(setup.jsessionid) }
-	  * def transformer = callonce read('test-transformer-details.feature')
-
-* print transformer
 
   @GetenrichedData
   Scenario: Get enriched data
     Given path 'pdi/execute'
-    And params { P_TRANSFORMER: 'dateiso8601', filename: '/Users/aliakkas/apps/spring/etl/jb-acceptancetest.kjb' }
+    And params { P_TRANSFORMER: 'dateiso8601', filename: './etl/jb-acceptancetest.kjb' }
     When method get
     Then status 200
     And match $.pdi-result.result.nr_errors == '0'
@@ -35,11 +32,3 @@ will receive a date field as input, convert it to the ISO8601 standard format an
 	 * string r_2 = r_1.split(',')[2].replace("]}","")
 	 * string r_3 = r_1.split(',')[1]
 	 * print r_2,r_3	 
-	 
-	   * text t11 = 
-	 """ 
-	 SELECT id, zlmsgtype, parsestring, record_series, retention_class, record_class, record_type, aa_number, at_number
-	 FROM lookup.ecomms_record_type
-	 ORDER BY zlmsgtype ASC, parsestring ASC
-	 """
-	 * print t11
