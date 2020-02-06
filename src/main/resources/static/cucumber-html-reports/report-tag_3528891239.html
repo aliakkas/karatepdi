@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no RC 2.3.0) - Tag: @processXML</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+          <li role="presentation" ><a href="overview-trends.html">Trends</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ST end-to-end testing</td>
+        <td>RC 2.3.0</td>
+      <td>05 Jan 2020, 23:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+    <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@processXML</td>
+          <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="60462837">0.060</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2215264115.html">/Users/aliakkas/apps/spring/pdi.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3528891239.html">@processXML</a>
+</div>
+
+
+  <span class="lead-duration duration">0.060</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">run test-release-xml.ktr</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pdi/execute'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params { filename: '/Users/aliakkas/apps/hv/aa/test-release-xml.ktr' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>23:29:13.808 [print] &lt;pdi-result&gt;
+   &lt;result&gt;
+      &lt;lines_input&gt;0&lt;/lines_input&gt;
+      &lt;lines_output&gt;0&lt;/lines_output&gt;
+      &lt;lines_read&gt;0&lt;/lines_read&gt;
+      &lt;lines_written&gt;0&lt;/lines_written&gt;
+      &lt;lines_updated&gt;0&lt;/lines_updated&gt;
+      &lt;lines_rejected&gt;0&lt;/lines_rejected&gt;
+      &lt;lines_deleted&gt;0&lt;/lines_deleted&gt;
+      &lt;nr_errors&gt;0&lt;/nr_errors&gt;
+      &lt;nr_files_retrieved&gt;0&lt;/nr_files_retrieved&gt;
+      &lt;entry_nr&gt;0&lt;/entry_nr&gt;
+      &lt;result&gt;Y&lt;/result&gt;
+      &lt;exit_status&gt;0&lt;/exit_status&gt;
+      &lt;is_stopped&gt;N&lt;/is_stopped&gt;
+      &lt;log_channel_id&gt;ffff8e50-c73c-4025-b529-c2dd62e4dc02&lt;/log_channel_id&gt;
+      &lt;log_text/&gt;
+      &lt;elapsedTimeMillis&gt;0&lt;/elapsedTimeMillis&gt;
+      &lt;executionId/&gt;
+      &lt;result-file/&gt;
+      &lt;result-rows/&gt;
+   &lt;/result&gt;
+   &lt;system-out&gt;2020/01/05 23:21:46 - test-release-xml - Dispatching started for transformation [test-release-xml]
+2020/01/05 23:21:46 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/05 23:21:46 - js-extract-payload-md5.0 - Optimization level set to 9.
+2020/01/05 23:21:46 - js-extract-payload-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:21:46 - gdxml-metadata.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:21:46 - frmla-verify-target-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:21:46 - wtl-metadata.0 - 
+2020/01/05 23:21:46 - wtl-metadata.0 - ------------&amp;gt; Linenr 1------------------------------
+2020/01/05 23:21:46 - wtl-metadata.0 - tr-rest-call-hci-get-auth-token
+2020/01/05 23:21:46 - wtl-metadata.0 - 
+2020/01/05 23:21:46 - wtl-metadata.0 - enrichedmd_md5 = 80BE6E9ADA100843C4A58B40FC8B4B5C
+2020/01/05 23:21:46 - wtl-metadata.0 - mpTEAudit_hash = 9CCB0A23E44D8432B200EA0C3BBBB911
+2020/01/05 23:21:46 - wtl-metadata.0 - enrichedmetadata_passed = N
+2020/01/05 23:21:46 - wtl-metadata.0 - jnlmd_md5 = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:21:46 - wtl-metadata.0 - mpJNLAudit_hash = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:21:46 - wtl-metadata.0 - journalmetadata_passed = Y
+2020/01/05 23:21:46 - wtl-metadata.0 - mpExtractAudit_hash = 3E4C4CA27E6E1B8EA7AFCFA3076B047E
+2020/01/05 23:21:46 - wtl-metadata.0 - mpPLAudit_hash = 42BC0584BB9509773E9A95FB14B53569
+2020/01/05 23:21:46 - wtl-metadata.0 - smd_md5 = E68CF4582D13756C61F0535DA12A27F0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGUID = 70393
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGZLPUSERID = 1
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGID = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFOLDERID = 71
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGISREAD = N
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDELETED = N
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSENDERAUTHENTICATED = N
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGENCMSGPWD = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGTYPE = 235
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGLANGUAGE = en
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFROM = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRECIPIENT = Undisclosed recipients:,
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSUBJECT = Your bank account setup for expense reimbursement
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGCATEGORY = 
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDATEPROCESSED = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDATECREATE = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDATESENT = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDATEEXPIRY = 
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGVAULTITEMID = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSIZE = 28818
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSIZECHARGED = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSOURCE = travelExpense.eml
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSTOREFORMATTYPE = skel
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFLAGS = -2147483568
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFLAGS2 = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGUPDATETIME = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRETENTIONID = 1
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRECID = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRECCATID = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - CC = 
+2020/01/05 23:21:46 - wtl-metadata.0 - BCC = 
+2020/01/05 23:21:46 - wtl-metadata.0 - SENDER = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:21:46 - wtl-metadata.0 - THREAD-TOPIC = Your bank account setup for expense reimbursement
+2020/01/05 23:21:46 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM = 
+2020/01/05 23:21:46 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT = 
+2020/01/05 23:21:46 - wtl-metadata.0 - triggerEventDate = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - jurisdiction = CH
+2020/01/05 23:21:46 - wtl-metadata.0 - mimeType = message/rfc822
+2020/01/05 23:21:46 - wtl-metadata.0 - processingCenterId = 811
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsAttachmentNotScannedStatus = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsBccList = 
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsSender = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGUID_1 = 70393
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGZLPUSERID_1 = 1
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFOLDERID_1 = 71
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGISREAD_1 = N
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDELETED_1 = N
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSENDERAUTHENTICATED_1 = N
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGENCMSGPWD_1 = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGTYPE_1 = 235
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGLANGUAGE_1 = en
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGCATEGORY_1 = 
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDATECREATE_1 = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGDATEEXPIRY_1 = 
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGVAULTITEMID_1 = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSIZE_1 = 28818
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSIZECHARGED_1 = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSOURCE_1 = travelExpense.eml
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGSTOREFORMATTYPE_1 = skel
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFLAGS_1 = -2147483568
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGFLAGS2_1 = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGUPDATETIME_1 = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRETENTIONID_1 = 1
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRECID_1 = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - MSGRECCATID_1 = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM_1 = 
+2020/01/05 23:21:46 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT_1 = 
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsReceivedDateTime = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsFromList = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsNumberOfRecipients = 
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsCcList = 
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsToList = Undisclosed recipients:,
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsSendDateTime = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsThreadTopic = Your bank account setup for expense reimbursement
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsFailedDecryption = 0
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsSubject = Your bank account setup for expense reimbursement
+2020/01/05 23:21:46 - wtl-metadata.0 - dhmStatus = active
+2020/01/05 23:21:46 - wtl-metadata.0 - dhmType = technical
+2020/01/05 23:21:46 - wtl-metadata.0 - dhmPreservationNumber = AA40609_2019
+2020/01/05 23:21:46 - wtl-metadata.0 - dhmSetByUser = T999999
+2020/01/05 23:21:46 - wtl-metadata.0 - dhmSetTimeStamp = 2019-12-20T14:35:02.317+0000
+2020/01/05 23:21:46 - wtl-metadata.0 - legacyArchiveReferenceCode = AA40609
+2020/01/05 23:21:46 - wtl-metadata.0 - legacyArchiveReferenceRegion = CH
+2020/01/05 23:21:46 - wtl-metadata.0 - legacyArchiveReferenceInstanceCode = AT24481
+2020/01/05 23:21:46 - wtl-metadata.0 - eCommsLegacyRecordId = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:21:46 - wtl-metadata.0 - migrationPlatformEnrichedMetadata = &amp;lt;migrationPlatformEnrichedMetadata&amp;gt;&amp;lt;platform annot=&quot;default&quot;&amp;gt;&amp;lt;triggerEventDate&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/triggerEventDate&amp;gt;&amp;lt;jurisdiction&amp;gt;CH&amp;lt;/jurisdiction&amp;gt;&amp;lt;mimeType&amp;gt;message/rfc822&amp;lt;/mimeType&amp;gt;&amp;lt;processingCenterId&amp;gt;811&amp;lt;/processingCenterId&amp;gt;&amp;lt;/platform&amp;gt;&amp;lt;custom annot=&quot;default&quot;&amp;gt;&amp;lt;eCommsAttachmentNotScannedStatus&amp;gt;0&amp;lt;/eCommsAttachmentNotScannedStatus&amp;gt;&amp;lt;eCommsBccList/&amp;gt;&amp;lt;eCommsSender&amp;gt;Aleksandra Nowak &amp;amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsSender&amp;gt;&amp;lt;legacyArchiveSourceMetadata&amp;gt;&amp;lt;MSGUID&amp;gt;70393&amp;lt;/MSGUID&amp;gt;&amp;lt;MSGZLPUSERID&amp;gt;1&amp;lt;/MSGZLPUSERID&amp;gt;&amp;lt;MSGFOLDERID&amp;gt;71&amp;lt;/MSGFOLDERID&amp;gt;&amp;lt;MSGISREAD&amp;gt;N&amp;lt;/MSGISREAD&amp;gt;&amp;lt;MSGDELETED&amp;gt;N&amp;lt;/MSGDELETED&amp;gt;&amp;lt;MSGSENDERAUTHENTICATED&amp;gt;N&amp;lt;/MSGSENDERAUTHENTICATED&amp;gt;&amp;lt;MSGENCMSGPWD&amp;gt;6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91&amp;lt;/MSGENCMSGPWD&amp;gt;&amp;lt;MSGTYPE&amp;gt;235&amp;lt;/MSGTYPE&amp;gt;&amp;lt;MSGLANGUAGE&amp;gt;en&amp;lt;/MSGLANGUAGE&amp;gt;&amp;lt;MSGCATEGORY/&amp;gt;&amp;lt;MSGDATECREATE&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/MSGDATECREATE&amp;gt;&amp;lt;MSGDATEEXPIRY/&amp;gt;&amp;lt;MSGVAULTITEMID&amp;gt;A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA&amp;lt;/MSGVAULTITEMID&amp;gt;&amp;lt;MSGSIZE&amp;gt;28818&amp;lt;/MSGSIZE&amp;gt;&amp;lt;MSGSIZECHARGED&amp;gt;0&amp;lt;/MSGSIZECHARGED&amp;gt;&amp;lt;MSGSOURCE&amp;gt;travelExpense.eml&amp;lt;/MSGSOURCE&amp;gt;&amp;lt;MSGSTOREFORMATTYPE&amp;gt;skel&amp;lt;/MSGSTOREFORMATTYPE&amp;gt;&amp;lt;MSGFLAGS&amp;gt;-2147483568&amp;lt;/MSGFLAGS&amp;gt;&amp;lt;MSGFLAGS2&amp;gt;0&amp;lt;/MSGFLAGS2&amp;gt;&amp;lt;MSGUPDATETIME&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/MSGUPDATETIME&amp;gt;&amp;lt;MSGRETENTIONID&amp;gt;1&amp;lt;/MSGRETENTIONID&amp;gt;&amp;lt;MSGRECID&amp;gt;0&amp;lt;/MSGRECID&amp;gt;&amp;lt;MSGRECCATID&amp;gt;0&amp;lt;/MSGRECCATID&amp;gt;&amp;lt;X-ZL-ENVELOPE-FROM/&amp;gt;&amp;lt;X-ZL-ENVELOPE-RCPT/&amp;gt;&amp;lt;/legacyArchiveSourceMetadata&amp;gt;&amp;lt;eCommsReceivedDateTime&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/eCommsReceivedDateTime&amp;gt;&amp;lt;eCommsFromList&amp;gt;T&amp;amp;amp;E Support-EMEA &amp;amp;lt;TESupport.EMEA@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsFromList&amp;gt;&amp;lt;eCommsNumberOfRecipients calculationFailed=&quot;true&quot;/&amp;gt;&amp;lt;eCommsCcList/&amp;gt;&amp;lt;eCommsToList&amp;gt;Undisclosed recipients:,&amp;lt;/eCommsToList&amp;gt;&amp;lt;eCommsSendDateTime&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/eCommsSendDateTime&amp;gt;&amp;lt;eCommsThreadTopic&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsThreadTopic&amp;gt;&amp;lt;eCommsFailedDecryption&amp;gt;0&amp;lt;/eCommsFailedDecryption&amp;gt;&amp;lt;eCommsSubject&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsSubject&amp;gt;&amp;lt;/custom&amp;gt;&amp;lt;destruction-hold annot=&quot;destruction-hold&quot;&amp;gt;&amp;lt;dhmStatus&amp;gt;active&amp;lt;/dhmStatus&amp;gt;&amp;lt;dhmType&amp;gt;technical&amp;lt;/dhmType&amp;gt;&amp;lt;dhmPreservationNumber&amp;gt;AA40609_2019&amp;lt;/dhmPreservationNumber&amp;gt;&amp;lt;dhmApplied&amp;gt;&amp;lt;dhmSetByUser&amp;gt;T999999&amp;lt;/dhmSetByUser&amp;gt;&amp;lt;dhmSetTimeStamp&amp;gt;2019-12-20T14:35:02.317+0000&amp;lt;/dhmSetTimeStamp&amp;gt;&amp;lt;/dhmApplied&amp;gt;&amp;lt;/destruction-hold&amp;gt;&amp;lt;legacyArchiveReference annot=&quot;migration-history&quot;&amp;gt;&amp;lt;legacyArchiveReferenceCode&amp;gt;AA40609&amp;lt;/legacyArchiveReferenceCode&amp;gt;&amp;lt;legacyArchiveReferenceRegion&amp;gt;CH&amp;lt;/legacyArchiveReferenceRegion&amp;gt;&amp;lt;legacyArchiveReferenceInstanceCode&amp;gt;AT24481&amp;lt;/legacyArchiveReferenceInstanceCode&amp;gt;&amp;lt;eCommsLegacyRecordId&amp;gt;I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB&amp;lt;/eCommsLegacyRecordId&amp;gt;&amp;lt;/legacyArchiveReference&amp;gt;&amp;lt;/migrationPlatformEnrichedMetadata&amp;gt;
+2020/01/05 23:21:46 - wtl-metadata.0 - 
+2020/01/05 23:21:46 - wtl-metadata.0 - ====================
+2020/01/05 23:21:46 - wtl-metadata.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:48 - test-release-xml - Dispatching started for transformation [test-release-xml]
+2020/01/05 23:24:48 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/05 23:24:48 - js-extract-payload-md5.0 - Optimization level set to 9.
+2020/01/05 23:24:48 - js-extract-payload-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:48 - gdxml-metadata.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:48 - wtl-metadata.0 - 
+2020/01/05 23:24:48 - wtl-metadata.0 - ------------&amp;gt; Linenr 1------------------------------
+2020/01/05 23:24:48 - wtl-metadata.0 - tr-rest-call-hci-get-auth-token
+2020/01/05 23:24:48 - wtl-metadata.0 - 
+2020/01/05 23:24:48 - wtl-metadata.0 - enrichedmd_md5 = 80BE6E9ADA100843C4A58B40FC8B4B5C
+2020/01/05 23:24:48 - wtl-metadata.0 - mpTEAudit_hash = 9CCB0A23E44D8432B200EA0C3BBBB911
+2020/01/05 23:24:48 - wtl-metadata.0 - enrichedmetadata_passed = N
+2020/01/05 23:24:48 - wtl-metadata.0 - jnlmd_md5 = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:24:48 - wtl-metadata.0 - mpJNLAudit_hash = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:24:48 - wtl-metadata.0 - journalmetadata_passed = Y
+2020/01/05 23:24:48 - wtl-metadata.0 - mpExtractAudit_hash = 3E4C4CA27E6E1B8EA7AFCFA3076B047E
+2020/01/05 23:24:48 - wtl-metadata.0 - mpPLAudit_hash = 42BC0584BB9509773E9A95FB14B53569
+2020/01/05 23:24:48 - wtl-metadata.0 - smd_md5 = E68CF4582D13756C61F0535DA12A27F0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGUID = 70393
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGZLPUSERID = 1
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGID = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFOLDERID = 71
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGISREAD = N
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDELETED = N
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSENDERAUTHENTICATED = N
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGENCMSGPWD = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGTYPE = 235
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGLANGUAGE = en
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFROM = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRECIPIENT = Undisclosed recipients:,
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSUBJECT = Your bank account setup for expense reimbursement
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGCATEGORY = 
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDATEPROCESSED = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDATECREATE = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDATESENT = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDATEEXPIRY = 
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGVAULTITEMID = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSIZE = 28818
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSIZECHARGED = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSOURCE = travelExpense.eml
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSTOREFORMATTYPE = skel
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFLAGS = -2147483568
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFLAGS2 = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGUPDATETIME = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRETENTIONID = 1
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRECID = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRECCATID = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - CC = 
+2020/01/05 23:24:48 - wtl-metadata.0 - BCC = 
+2020/01/05 23:24:48 - wtl-metadata.0 - SENDER = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:24:48 - wtl-metadata.0 - THREAD-TOPIC = Your bank account setup for expense reimbursement
+2020/01/05 23:24:48 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM = 
+2020/01/05 23:24:48 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT = 
+2020/01/05 23:24:48 - wtl-metadata.0 - triggerEventDate = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - jurisdiction = CH
+2020/01/05 23:24:48 - wtl-metadata.0 - mimeType = message/rfc822
+2020/01/05 23:24:48 - wtl-metadata.0 - processingCenterId = 811
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsAttachmentNotScannedStatus = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsBccList = 
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsSender = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGUID_1 = 70393
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGZLPUSERID_1 = 1
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFOLDERID_1 = 71
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGISREAD_1 = N
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDELETED_1 = N
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSENDERAUTHENTICATED_1 = N
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGENCMSGPWD_1 = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGTYPE_1 = 235
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGLANGUAGE_1 = en
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGCATEGORY_1 = 
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDATECREATE_1 = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGDATEEXPIRY_1 = 
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGVAULTITEMID_1 = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSIZE_1 = 28818
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSIZECHARGED_1 = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSOURCE_1 = travelExpense.eml
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGSTOREFORMATTYPE_1 = skel
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFLAGS_1 = -2147483568
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGFLAGS2_1 = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGUPDATETIME_1 = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRETENTIONID_1 = 1
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRECID_1 = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - MSGRECCATID_1 = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM_1 = 
+2020/01/05 23:24:48 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT_1 = 
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsReceivedDateTime = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsFromList = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsNumberOfRecipients = 
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsCcList = 
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsToList = Undisclosed recipients:,
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsSendDateTime = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsThreadTopic = Your bank account setup for expense reimbursement
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsFailedDecryption = 0
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsSubject = Your bank account setup for expense reimbursement
+2020/01/05 23:24:48 - wtl-metadata.0 - dhmStatus = active
+2020/01/05 23:24:48 - wtl-metadata.0 - dhmType = technical
+2020/01/05 23:24:48 - wtl-metadata.0 - dhmPreservationNumber = AA40609_2019
+2020/01/05 23:24:48 - wtl-metadata.0 - dhmSetByUser = T999999
+2020/01/05 23:24:48 - wtl-metadata.0 - dhmSetTimeStamp = 2019-12-20T14:35:02.317+0000
+2020/01/05 23:24:48 - wtl-metadata.0 - legacyArchiveReferenceCode = AA40609
+2020/01/05 23:24:48 - wtl-metadata.0 - legacyArchiveReferenceRegion = CH
+2020/01/05 23:24:48 - wtl-metadata.0 - legacyArchiveReferenceInstanceCode = AT24481
+2020/01/05 23:24:48 - wtl-metadata.0 - eCommsLegacyRecordId = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:24:48 - wtl-metadata.0 - migrationPlatformEnrichedMetadata = &amp;lt;migrationPlatformEnrichedMetadata&amp;gt;&amp;lt;platform annot=&quot;default&quot;&amp;gt;&amp;lt;triggerEventDate&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/triggerEventDate&amp;gt;&amp;lt;jurisdiction&amp;gt;CH&amp;lt;/jurisdiction&amp;gt;&amp;lt;mimeType&amp;gt;message/rfc822&amp;lt;/mimeType&amp;gt;&amp;lt;processingCenterId&amp;gt;811&amp;lt;/processingCenterId&amp;gt;&amp;lt;/platform&amp;gt;&amp;lt;custom annot=&quot;default&quot;&amp;gt;&amp;lt;eCommsAttachmentNotScannedStatus&amp;gt;0&amp;lt;/eCommsAttachmentNotScannedStatus&amp;gt;&amp;lt;eCommsBccList/&amp;gt;&amp;lt;eCommsSender&amp;gt;Aleksandra Nowak &amp;amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsSender&amp;gt;&amp;lt;legacyArchiveSourceMetadata&amp;gt;&amp;lt;MSGUID&amp;gt;70393&amp;lt;/MSGUID&amp;gt;&amp;lt;MSGZLPUSERID&amp;gt;1&amp;lt;/MSGZLPUSERID&amp;gt;&amp;lt;MSGFOLDERID&amp;gt;71&amp;lt;/MSGFOLDERID&amp;gt;&amp;lt;MSGISREAD&amp;gt;N&amp;lt;/MSGISREAD&amp;gt;&amp;lt;MSGDELETED&amp;gt;N&amp;lt;/MSGDELETED&amp;gt;&amp;lt;MSGSENDERAUTHENTICATED&amp;gt;N&amp;lt;/MSGSENDERAUTHENTICATED&amp;gt;&amp;lt;MSGENCMSGPWD&amp;gt;6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91&amp;lt;/MSGENCMSGPWD&amp;gt;&amp;lt;MSGTYPE&amp;gt;235&amp;lt;/MSGTYPE&amp;gt;&amp;lt;MSGLANGUAGE&amp;gt;en&amp;lt;/MSGLANGUAGE&amp;gt;&amp;lt;MSGCATEGORY/&amp;gt;&amp;lt;MSGDATECREATE&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/MSGDATECREATE&amp;gt;&amp;lt;MSGDATEEXPIRY/&amp;gt;&amp;lt;MSGVAULTITEMID&amp;gt;A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA&amp;lt;/MSGVAULTITEMID&amp;gt;&amp;lt;MSGSIZE&amp;gt;28818&amp;lt;/MSGSIZE&amp;gt;&amp;lt;MSGSIZECHARGED&amp;gt;0&amp;lt;/MSGSIZECHARGED&amp;gt;&amp;lt;MSGSOURCE&amp;gt;travelExpense.eml&amp;lt;/MSGSOURCE&amp;gt;&amp;lt;MSGSTOREFORMATTYPE&amp;gt;skel&amp;lt;/MSGSTOREFORMATTYPE&amp;gt;&amp;lt;MSGFLAGS&amp;gt;-2147483568&amp;lt;/MSGFLAGS&amp;gt;&amp;lt;MSGFLAGS2&amp;gt;0&amp;lt;/MSGFLAGS2&amp;gt;&amp;lt;MSGUPDATETIME&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/MSGUPDATETIME&amp;gt;&amp;lt;MSGRETENTIONID&amp;gt;1&amp;lt;/MSGRETENTIONID&amp;gt;&amp;lt;MSGRECID&amp;gt;0&amp;lt;/MSGRECID&amp;gt;&amp;lt;MSGRECCATID&amp;gt;0&amp;lt;/MSGRECCATID&amp;gt;&amp;lt;X-ZL-ENVELOPE-FROM/&amp;gt;&amp;lt;X-ZL-ENVELOPE-RCPT/&amp;gt;&amp;lt;/legacyArchiveSourceMetadata&amp;gt;&amp;lt;eCommsReceivedDateTime&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/eCommsReceivedDateTime&amp;gt;&amp;lt;eCommsFromList&amp;gt;T&amp;amp;amp;E Support-EMEA &amp;amp;lt;TESupport.EMEA@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsFromList&amp;gt;&amp;lt;eCommsNumberOfRecipients calculationFailed=&quot;true&quot;/&amp;gt;&amp;lt;eCommsCcList/&amp;gt;&amp;lt;eCommsToList&amp;gt;Undisclosed recipients:,&amp;lt;/eCommsToList&amp;gt;&amp;lt;eCommsSendDateTime&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/eCommsSendDateTime&amp;gt;&amp;lt;eCommsThreadTopic&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsThreadTopic&amp;gt;&amp;lt;eCommsFailedDecryption&amp;gt;0&amp;lt;/eCommsFailedDecryption&amp;gt;&amp;lt;eCommsSubject&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsSubject&amp;gt;&amp;lt;/custom&amp;gt;&amp;lt;destruction-hold annot=&quot;destruction-hold&quot;&amp;gt;&amp;lt;dhmStatus&amp;gt;active&amp;lt;/dhmStatus&amp;gt;&amp;lt;dhmType&amp;gt;technical&amp;lt;/dhmType&amp;gt;&amp;lt;dhmPreservationNumber&amp;gt;AA40609_2019&amp;lt;/dhmPreservationNumber&amp;gt;&amp;lt;dhmApplied&amp;gt;&amp;lt;dhmSetByUser&amp;gt;T999999&amp;lt;/dhmSetByUser&amp;gt;&amp;lt;dhmSetTimeStamp&amp;gt;2019-12-20T14:35:02.317+0000&amp;lt;/dhmSetTimeStamp&amp;gt;&amp;lt;/dhmApplied&amp;gt;&amp;lt;/destruction-hold&amp;gt;&amp;lt;legacyArchiveReference annot=&quot;migration-history&quot;&amp;gt;&amp;lt;legacyArchiveReferenceCode&amp;gt;AA40609&amp;lt;/legacyArchiveReferenceCode&amp;gt;&amp;lt;legacyArchiveReferenceRegion&amp;gt;CH&amp;lt;/legacyArchiveReferenceRegion&amp;gt;&amp;lt;legacyArchiveReferenceInstanceCode&amp;gt;AT24481&amp;lt;/legacyArchiveReferenceInstanceCode&amp;gt;&amp;lt;eCommsLegacyRecordId&amp;gt;I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB&amp;lt;/eCommsLegacyRecordId&amp;gt;&amp;lt;/legacyArchiveReference&amp;gt;&amp;lt;/migrationPlatformEnrichedMetadata&amp;gt;
+2020/01/05 23:24:48 - wtl-metadata.0 - 
+2020/01/05 23:24:48 - wtl-metadata.0 - ====================
+2020/01/05 23:24:48 - frmla-verify-target-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:48 - wtl-metadata.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:53 - test-release-xml - Dispatching started for transformation [test-release-xml]
+2020/01/05 23:24:53 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/05 23:24:53 - js-extract-payload-md5.0 - Optimization level set to 9.
+2020/01/05 23:24:53 - js-extract-payload-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:53 - gdxml-metadata.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:53 - wtl-metadata.0 - 
+2020/01/05 23:24:53 - wtl-metadata.0 - ------------&amp;gt; Linenr 1------------------------------
+2020/01/05 23:24:53 - wtl-metadata.0 - tr-rest-call-hci-get-auth-token
+2020/01/05 23:24:53 - wtl-metadata.0 - 
+2020/01/05 23:24:53 - wtl-metadata.0 - enrichedmd_md5 = 80BE6E9ADA100843C4A58B40FC8B4B5C
+2020/01/05 23:24:53 - wtl-metadata.0 - mpTEAudit_hash = 9CCB0A23E44D8432B200EA0C3BBBB911
+2020/01/05 23:24:53 - wtl-metadata.0 - enrichedmetadata_passed = N
+2020/01/05 23:24:53 - wtl-metadata.0 - jnlmd_md5 = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:24:53 - wtl-metadata.0 - mpJNLAudit_hash = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:24:53 - wtl-metadata.0 - journalmetadata_passed = Y
+2020/01/05 23:24:53 - wtl-metadata.0 - mpExtractAudit_hash = 3E4C4CA27E6E1B8EA7AFCFA3076B047E
+2020/01/05 23:24:53 - wtl-metadata.0 - mpPLAudit_hash = 42BC0584BB9509773E9A95FB14B53569
+2020/01/05 23:24:53 - wtl-metadata.0 - smd_md5 = E68CF4582D13756C61F0535DA12A27F0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGUID = 70393
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGZLPUSERID = 1
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGID = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFOLDERID = 71
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGISREAD = N
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDELETED = N
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSENDERAUTHENTICATED = N
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGENCMSGPWD = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGTYPE = 235
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGLANGUAGE = en
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFROM = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRECIPIENT = Undisclosed recipients:,
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSUBJECT = Your bank account setup for expense reimbursement
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGCATEGORY = 
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDATEPROCESSED = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDATECREATE = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDATESENT = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDATEEXPIRY = 
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGVAULTITEMID = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSIZE = 28818
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSIZECHARGED = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSOURCE = travelExpense.eml
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSTOREFORMATTYPE = skel
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFLAGS = -2147483568
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFLAGS2 = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGUPDATETIME = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRETENTIONID = 1
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRECID = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRECCATID = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - CC = 
+2020/01/05 23:24:53 - wtl-metadata.0 - BCC = 
+2020/01/05 23:24:53 - wtl-metadata.0 - SENDER = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:24:53 - wtl-metadata.0 - THREAD-TOPIC = Your bank account setup for expense reimbursement
+2020/01/05 23:24:53 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM = 
+2020/01/05 23:24:53 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT = 
+2020/01/05 23:24:53 - wtl-metadata.0 - triggerEventDate = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - jurisdiction = CH
+2020/01/05 23:24:53 - wtl-metadata.0 - mimeType = message/rfc822
+2020/01/05 23:24:53 - wtl-metadata.0 - processingCenterId = 811
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsAttachmentNotScannedStatus = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsBccList = 
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsSender = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGUID_1 = 70393
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGZLPUSERID_1 = 1
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFOLDERID_1 = 71
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGISREAD_1 = N
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDELETED_1 = N
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSENDERAUTHENTICATED_1 = N
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGENCMSGPWD_1 = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGTYPE_1 = 235
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGLANGUAGE_1 = en
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGCATEGORY_1 = 
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDATECREATE_1 = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGDATEEXPIRY_1 = 
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGVAULTITEMID_1 = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSIZE_1 = 28818
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSIZECHARGED_1 = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSOURCE_1 = travelExpense.eml
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGSTOREFORMATTYPE_1 = skel
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFLAGS_1 = -2147483568
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGFLAGS2_1 = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGUPDATETIME_1 = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRETENTIONID_1 = 1
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRECID_1 = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - MSGRECCATID_1 = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM_1 = 
+2020/01/05 23:24:53 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT_1 = 
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsReceivedDateTime = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsFromList = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsNumberOfRecipients = 
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsCcList = 
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsToList = Undisclosed recipients:,
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsSendDateTime = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsThreadTopic = Your bank account setup for expense reimbursement
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsFailedDecryption = 0
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsSubject = Your bank account setup for expense reimbursement
+2020/01/05 23:24:53 - wtl-metadata.0 - dhmStatus = active
+2020/01/05 23:24:53 - wtl-metadata.0 - dhmType = technical
+2020/01/05 23:24:53 - wtl-metadata.0 - dhmPreservationNumber = AA40609_2019
+2020/01/05 23:24:53 - wtl-metadata.0 - dhmSetByUser = T999999
+2020/01/05 23:24:53 - wtl-metadata.0 - dhmSetTimeStamp = 2019-12-20T14:35:02.317+0000
+2020/01/05 23:24:53 - wtl-metadata.0 - legacyArchiveReferenceCode = AA40609
+2020/01/05 23:24:53 - wtl-metadata.0 - legacyArchiveReferenceRegion = CH
+2020/01/05 23:24:53 - wtl-metadata.0 - legacyArchiveReferenceInstanceCode = AT24481
+2020/01/05 23:24:53 - wtl-metadata.0 - eCommsLegacyRecordId = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:24:53 - wtl-metadata.0 - migrationPlatformEnrichedMetadata = &amp;lt;migrationPlatformEnrichedMetadata&amp;gt;&amp;lt;platform annot=&quot;default&quot;&amp;gt;&amp;lt;triggerEventDate&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/triggerEventDate&amp;gt;&amp;lt;jurisdiction&amp;gt;CH&amp;lt;/jurisdiction&amp;gt;&amp;lt;mimeType&amp;gt;message/rfc822&amp;lt;/mimeType&amp;gt;&amp;lt;processingCenterId&amp;gt;811&amp;lt;/processingCenterId&amp;gt;&amp;lt;/platform&amp;gt;&amp;lt;custom annot=&quot;default&quot;&amp;gt;&amp;lt;eCommsAttachmentNotScannedStatus&amp;gt;0&amp;lt;/eCommsAttachmentNotScannedStatus&amp;gt;&amp;lt;eCommsBccList/&amp;gt;&amp;lt;eCommsSender&amp;gt;Aleksandra Nowak &amp;amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsSender&amp;gt;&amp;lt;legacyArchiveSourceMetadata&amp;gt;&amp;lt;MSGUID&amp;gt;70393&amp;lt;/MSGUID&amp;gt;&amp;lt;MSGZLPUSERID&amp;gt;1&amp;lt;/MSGZLPUSERID&amp;gt;&amp;lt;MSGFOLDERID&amp;gt;71&amp;lt;/MSGFOLDERID&amp;gt;&amp;lt;MSGISREAD&amp;gt;N&amp;lt;/MSGISREAD&amp;gt;&amp;lt;MSGDELETED&amp;gt;N&amp;lt;/MSGDELETED&amp;gt;&amp;lt;MSGSENDERAUTHENTICATED&amp;gt;N&amp;lt;/MSGSENDERAUTHENTICATED&amp;gt;&amp;lt;MSGENCMSGPWD&amp;gt;6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91&amp;lt;/MSGENCMSGPWD&amp;gt;&amp;lt;MSGTYPE&amp;gt;235&amp;lt;/MSGTYPE&amp;gt;&amp;lt;MSGLANGUAGE&amp;gt;en&amp;lt;/MSGLANGUAGE&amp;gt;&amp;lt;MSGCATEGORY/&amp;gt;&amp;lt;MSGDATECREATE&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/MSGDATECREATE&amp;gt;&amp;lt;MSGDATEEXPIRY/&amp;gt;&amp;lt;MSGVAULTITEMID&amp;gt;A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA&amp;lt;/MSGVAULTITEMID&amp;gt;&amp;lt;MSGSIZE&amp;gt;28818&amp;lt;/MSGSIZE&amp;gt;&amp;lt;MSGSIZECHARGED&amp;gt;0&amp;lt;/MSGSIZECHARGED&amp;gt;&amp;lt;MSGSOURCE&amp;gt;travelExpense.eml&amp;lt;/MSGSOURCE&amp;gt;&amp;lt;MSGSTOREFORMATTYPE&amp;gt;skel&amp;lt;/MSGSTOREFORMATTYPE&amp;gt;&amp;lt;MSGFLAGS&amp;gt;-2147483568&amp;lt;/MSGFLAGS&amp;gt;&amp;lt;MSGFLAGS2&amp;gt;0&amp;lt;/MSGFLAGS2&amp;gt;&amp;lt;MSGUPDATETIME&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/MSGUPDATETIME&amp;gt;&amp;lt;MSGRETENTIONID&amp;gt;1&amp;lt;/MSGRETENTIONID&amp;gt;&amp;lt;MSGRECID&amp;gt;0&amp;lt;/MSGRECID&amp;gt;&amp;lt;MSGRECCATID&amp;gt;0&amp;lt;/MSGRECCATID&amp;gt;&amp;lt;X-ZL-ENVELOPE-FROM/&amp;gt;&amp;lt;X-ZL-ENVELOPE-RCPT/&amp;gt;&amp;lt;/legacyArchiveSourceMetadata&amp;gt;&amp;lt;eCommsReceivedDateTime&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/eCommsReceivedDateTime&amp;gt;&amp;lt;eCommsFromList&amp;gt;T&amp;amp;amp;E Support-EMEA &amp;amp;lt;TESupport.EMEA@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsFromList&amp;gt;&amp;lt;eCommsNumberOfRecipients calculationFailed=&quot;true&quot;/&amp;gt;&amp;lt;eCommsCcList/&amp;gt;&amp;lt;eCommsToList&amp;gt;Undisclosed recipients:,&amp;lt;/eCommsToList&amp;gt;&amp;lt;eCommsSendDateTime&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/eCommsSendDateTime&amp;gt;&amp;lt;eCommsThreadTopic&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsThreadTopic&amp;gt;&amp;lt;eCommsFailedDecryption&amp;gt;0&amp;lt;/eCommsFailedDecryption&amp;gt;&amp;lt;eCommsSubject&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsSubject&amp;gt;&amp;lt;/custom&amp;gt;&amp;lt;destruction-hold annot=&quot;destruction-hold&quot;&amp;gt;&amp;lt;dhmStatus&amp;gt;active&amp;lt;/dhmStatus&amp;gt;&amp;lt;dhmType&amp;gt;technical&amp;lt;/dhmType&amp;gt;&amp;lt;dhmPreservationNumber&amp;gt;AA40609_2019&amp;lt;/dhmPreservationNumber&amp;gt;&amp;lt;dhmApplied&amp;gt;&amp;lt;dhmSetByUser&amp;gt;T999999&amp;lt;/dhmSetByUser&amp;gt;&amp;lt;dhmSetTimeStamp&amp;gt;2019-12-20T14:35:02.317+0000&amp;lt;/dhmSetTimeStamp&amp;gt;&amp;lt;/dhmApplied&amp;gt;&amp;lt;/destruction-hold&amp;gt;&amp;lt;legacyArchiveReference annot=&quot;migration-history&quot;&amp;gt;&amp;lt;legacyArchiveReferenceCode&amp;gt;AA40609&amp;lt;/legacyArchiveReferenceCode&amp;gt;&amp;lt;legacyArchiveReferenceRegion&amp;gt;CH&amp;lt;/legacyArchiveReferenceRegion&amp;gt;&amp;lt;legacyArchiveReferenceInstanceCode&amp;gt;AT24481&amp;lt;/legacyArchiveReferenceInstanceCode&amp;gt;&amp;lt;eCommsLegacyRecordId&amp;gt;I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB&amp;lt;/eCommsLegacyRecordId&amp;gt;&amp;lt;/legacyArchiveReference&amp;gt;&amp;lt;/migrationPlatformEnrichedMetadata&amp;gt;
+2020/01/05 23:24:53 - wtl-metadata.0 - 
+2020/01/05 23:24:53 - wtl-metadata.0 - ====================
+2020/01/05 23:24:53 - frmla-verify-target-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:24:53 - wtl-metadata.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:26:46 - test-release-xml - Dispatching started for transformation [test-release-xml]
+2020/01/05 23:26:46 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/05 23:26:46 - js-extract-payload-md5.0 - Optimization level set to 9.
+2020/01/05 23:26:46 - js-extract-payload-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:26:46 - gdxml-metadata.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:26:46 - wtl-metadata.0 - 
+2020/01/05 23:26:46 - wtl-metadata.0 - ------------&amp;gt; Linenr 1------------------------------
+2020/01/05 23:26:46 - wtl-metadata.0 - tr-rest-call-hci-get-auth-token
+2020/01/05 23:26:46 - wtl-metadata.0 - 
+2020/01/05 23:26:46 - wtl-metadata.0 - enrichedmd_md5 = 80BE6E9ADA100843C4A58B40FC8B4B5C
+2020/01/05 23:26:46 - wtl-metadata.0 - mpTEAudit_hash = 9CCB0A23E44D8432B200EA0C3BBBB911
+2020/01/05 23:26:46 - wtl-metadata.0 - enrichedmetadata_passed = N
+2020/01/05 23:26:46 - wtl-metadata.0 - jnlmd_md5 = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:26:46 - wtl-metadata.0 - mpJNLAudit_hash = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:26:46 - wtl-metadata.0 - journalmetadata_passed = Y
+2020/01/05 23:26:46 - wtl-metadata.0 - mpExtractAudit_hash = 3E4C4CA27E6E1B8EA7AFCFA3076B047E
+2020/01/05 23:26:46 - wtl-metadata.0 - mpPLAudit_hash = 42BC0584BB9509773E9A95FB14B53569
+2020/01/05 23:26:46 - wtl-metadata.0 - smd_md5 = E68CF4582D13756C61F0535DA12A27F0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGUID = 70393
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGZLPUSERID = 1
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGID = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFOLDERID = 71
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGISREAD = N
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDELETED = N
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSENDERAUTHENTICATED = N
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGENCMSGPWD = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGTYPE = 235
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGLANGUAGE = en
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFROM = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRECIPIENT = Undisclosed recipients:,
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSUBJECT = Your bank account setup for expense reimbursement
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGCATEGORY = 
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDATEPROCESSED = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDATECREATE = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDATESENT = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDATEEXPIRY = 
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGVAULTITEMID = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSIZE = 28818
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSIZECHARGED = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSOURCE = travelExpense.eml
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSTOREFORMATTYPE = skel
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFLAGS = -2147483568
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFLAGS2 = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGUPDATETIME = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRETENTIONID = 1
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRECID = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRECCATID = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - CC = 
+2020/01/05 23:26:46 - wtl-metadata.0 - BCC = 
+2020/01/05 23:26:46 - wtl-metadata.0 - SENDER = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:26:46 - wtl-metadata.0 - THREAD-TOPIC = Your bank account setup for expense reimbursement
+2020/01/05 23:26:46 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM = 
+2020/01/05 23:26:46 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT = 
+2020/01/05 23:26:46 - wtl-metadata.0 - triggerEventDate = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - jurisdiction = CH
+2020/01/05 23:26:46 - wtl-metadata.0 - mimeType = message/rfc822
+2020/01/05 23:26:46 - wtl-metadata.0 - processingCenterId = 811
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsAttachmentNotScannedStatus = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsBccList = 
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsSender = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGUID_1 = 70393
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGZLPUSERID_1 = 1
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFOLDERID_1 = 71
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGISREAD_1 = N
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDELETED_1 = N
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSENDERAUTHENTICATED_1 = N
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGENCMSGPWD_1 = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGTYPE_1 = 235
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGLANGUAGE_1 = en
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGCATEGORY_1 = 
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDATECREATE_1 = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGDATEEXPIRY_1 = 
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGVAULTITEMID_1 = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSIZE_1 = 28818
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSIZECHARGED_1 = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSOURCE_1 = travelExpense.eml
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGSTOREFORMATTYPE_1 = skel
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFLAGS_1 = -2147483568
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGFLAGS2_1 = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGUPDATETIME_1 = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRETENTIONID_1 = 1
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRECID_1 = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - MSGRECCATID_1 = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM_1 = 
+2020/01/05 23:26:46 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT_1 = 
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsReceivedDateTime = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsFromList = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsNumberOfRecipients = 
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsCcList = 
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsToList = Undisclosed recipients:,
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsSendDateTime = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsThreadTopic = Your bank account setup for expense reimbursement
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsFailedDecryption = 0
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsSubject = Your bank account setup for expense reimbursement
+2020/01/05 23:26:46 - wtl-metadata.0 - dhmStatus = active
+2020/01/05 23:26:46 - wtl-metadata.0 - dhmType = technical
+2020/01/05 23:26:46 - wtl-metadata.0 - dhmPreservationNumber = AA40609_2019
+2020/01/05 23:26:46 - wtl-metadata.0 - dhmSetByUser = T999999
+2020/01/05 23:26:46 - wtl-metadata.0 - dhmSetTimeStamp = 2019-12-20T14:35:02.317+0000
+2020/01/05 23:26:46 - wtl-metadata.0 - legacyArchiveReferenceCode = AA40609
+2020/01/05 23:26:46 - wtl-metadata.0 - legacyArchiveReferenceRegion = CH
+2020/01/05 23:26:46 - wtl-metadata.0 - legacyArchiveReferenceInstanceCode = AT24481
+2020/01/05 23:26:46 - wtl-metadata.0 - eCommsLegacyRecordId = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:26:46 - wtl-metadata.0 - migrationPlatformEnrichedMetadata = &amp;lt;migrationPlatformEnrichedMetadata&amp;gt;&amp;lt;platform annot=&quot;default&quot;&amp;gt;&amp;lt;triggerEventDate&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/triggerEventDate&amp;gt;&amp;lt;jurisdiction&amp;gt;CH&amp;lt;/jurisdiction&amp;gt;&amp;lt;mimeType&amp;gt;message/rfc822&amp;lt;/mimeType&amp;gt;&amp;lt;processingCenterId&amp;gt;811&amp;lt;/processingCenterId&amp;gt;&amp;lt;/platform&amp;gt;&amp;lt;custom annot=&quot;default&quot;&amp;gt;&amp;lt;eCommsAttachmentNotScannedStatus&amp;gt;0&amp;lt;/eCommsAttachmentNotScannedStatus&amp;gt;&amp;lt;eCommsBccList/&amp;gt;&amp;lt;eCommsSender&amp;gt;Aleksandra Nowak &amp;amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsSender&amp;gt;&amp;lt;legacyArchiveSourceMetadata&amp;gt;&amp;lt;MSGUID&amp;gt;70393&amp;lt;/MSGUID&amp;gt;&amp;lt;MSGZLPUSERID&amp;gt;1&amp;lt;/MSGZLPUSERID&amp;gt;&amp;lt;MSGFOLDERID&amp;gt;71&amp;lt;/MSGFOLDERID&amp;gt;&amp;lt;MSGISREAD&amp;gt;N&amp;lt;/MSGISREAD&amp;gt;&amp;lt;MSGDELETED&amp;gt;N&amp;lt;/MSGDELETED&amp;gt;&amp;lt;MSGSENDERAUTHENTICATED&amp;gt;N&amp;lt;/MSGSENDERAUTHENTICATED&amp;gt;&amp;lt;MSGENCMSGPWD&amp;gt;6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91&amp;lt;/MSGENCMSGPWD&amp;gt;&amp;lt;MSGTYPE&amp;gt;235&amp;lt;/MSGTYPE&amp;gt;&amp;lt;MSGLANGUAGE&amp;gt;en&amp;lt;/MSGLANGUAGE&amp;gt;&amp;lt;MSGCATEGORY/&amp;gt;&amp;lt;MSGDATECREATE&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/MSGDATECREATE&amp;gt;&amp;lt;MSGDATEEXPIRY/&amp;gt;&amp;lt;MSGVAULTITEMID&amp;gt;A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA&amp;lt;/MSGVAULTITEMID&amp;gt;&amp;lt;MSGSIZE&amp;gt;28818&amp;lt;/MSGSIZE&amp;gt;&amp;lt;MSGSIZECHARGED&amp;gt;0&amp;lt;/MSGSIZECHARGED&amp;gt;&amp;lt;MSGSOURCE&amp;gt;travelExpense.eml&amp;lt;/MSGSOURCE&amp;gt;&amp;lt;MSGSTOREFORMATTYPE&amp;gt;skel&amp;lt;/MSGSTOREFORMATTYPE&amp;gt;&amp;lt;MSGFLAGS&amp;gt;-2147483568&amp;lt;/MSGFLAGS&amp;gt;&amp;lt;MSGFLAGS2&amp;gt;0&amp;lt;/MSGFLAGS2&amp;gt;&amp;lt;MSGUPDATETIME&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/MSGUPDATETIME&amp;gt;&amp;lt;MSGRETENTIONID&amp;gt;1&amp;lt;/MSGRETENTIONID&amp;gt;&amp;lt;MSGRECID&amp;gt;0&amp;lt;/MSGRECID&amp;gt;&amp;lt;MSGRECCATID&amp;gt;0&amp;lt;/MSGRECCATID&amp;gt;&amp;lt;X-ZL-ENVELOPE-FROM/&amp;gt;&amp;lt;X-ZL-ENVELOPE-RCPT/&amp;gt;&amp;lt;/legacyArchiveSourceMetadata&amp;gt;&amp;lt;eCommsReceivedDateTime&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/eCommsReceivedDateTime&amp;gt;&amp;lt;eCommsFromList&amp;gt;T&amp;amp;amp;E Support-EMEA &amp;amp;lt;TESupport.EMEA@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsFromList&amp;gt;&amp;lt;eCommsNumberOfRecipients calculationFailed=&quot;true&quot;/&amp;gt;&amp;lt;eCommsCcList/&amp;gt;&amp;lt;eCommsToList&amp;gt;Undisclosed recipients:,&amp;lt;/eCommsToList&amp;gt;&amp;lt;eCommsSendDateTime&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/eCommsSendDateTime&amp;gt;&amp;lt;eCommsThreadTopic&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsThreadTopic&amp;gt;&amp;lt;eCommsFailedDecryption&amp;gt;0&amp;lt;/eCommsFailedDecryption&amp;gt;&amp;lt;eCommsSubject&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsSubject&amp;gt;&amp;lt;/custom&amp;gt;&amp;lt;destruction-hold annot=&quot;destruction-hold&quot;&amp;gt;&amp;lt;dhmStatus&amp;gt;active&amp;lt;/dhmStatus&amp;gt;&amp;lt;dhmType&amp;gt;technical&amp;lt;/dhmType&amp;gt;&amp;lt;dhmPreservationNumber&amp;gt;AA40609_2019&amp;lt;/dhmPreservationNumber&amp;gt;&amp;lt;dhmApplied&amp;gt;&amp;lt;dhmSetByUser&amp;gt;T999999&amp;lt;/dhmSetByUser&amp;gt;&amp;lt;dhmSetTimeStamp&amp;gt;2019-12-20T14:35:02.317+0000&amp;lt;/dhmSetTimeStamp&amp;gt;&amp;lt;/dhmApplied&amp;gt;&amp;lt;/destruction-hold&amp;gt;&amp;lt;legacyArchiveReference annot=&quot;migration-history&quot;&amp;gt;&amp;lt;legacyArchiveReferenceCode&amp;gt;AA40609&amp;lt;/legacyArchiveReferenceCode&amp;gt;&amp;lt;legacyArchiveReferenceRegion&amp;gt;CH&amp;lt;/legacyArchiveReferenceRegion&amp;gt;&amp;lt;legacyArchiveReferenceInstanceCode&amp;gt;AT24481&amp;lt;/legacyArchiveReferenceInstanceCode&amp;gt;&amp;lt;eCommsLegacyRecordId&amp;gt;I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB&amp;lt;/eCommsLegacyRecordId&amp;gt;&amp;lt;/legacyArchiveReference&amp;gt;&amp;lt;/migrationPlatformEnrichedMetadata&amp;gt;
+2020/01/05 23:26:46 - wtl-metadata.0 - 
+2020/01/05 23:26:46 - wtl-metadata.0 - ====================
+2020/01/05 23:26:46 - frmla-verify-target-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:26:46 - wtl-metadata.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:08 - test-release-xml - Dispatching started for transformation [test-release-xml]
+2020/01/05 23:29:08 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/05 23:29:08 - js-extract-payload-md5.0 - Optimization level set to 9.
+2020/01/05 23:29:08 - js-extract-payload-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:08 - gdxml-metadata.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:08 - wtl-metadata.0 - 
+2020/01/05 23:29:08 - wtl-metadata.0 - ------------&amp;gt; Linenr 1------------------------------
+2020/01/05 23:29:08 - wtl-metadata.0 - tr-rest-call-hci-get-auth-token
+2020/01/05 23:29:08 - wtl-metadata.0 - 
+2020/01/05 23:29:08 - wtl-metadata.0 - enrichedmd_md5 = 80BE6E9ADA100843C4A58B40FC8B4B5C
+2020/01/05 23:29:08 - wtl-metadata.0 - mpTEAudit_hash = 9CCB0A23E44D8432B200EA0C3BBBB911
+2020/01/05 23:29:08 - wtl-metadata.0 - enrichedmetadata_passed = N
+2020/01/05 23:29:08 - wtl-metadata.0 - jnlmd_md5 = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:29:08 - wtl-metadata.0 - mpJNLAudit_hash = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:29:08 - wtl-metadata.0 - journalmetadata_passed = Y
+2020/01/05 23:29:08 - wtl-metadata.0 - mpExtractAudit_hash = 3E4C4CA27E6E1B8EA7AFCFA3076B047E
+2020/01/05 23:29:08 - wtl-metadata.0 - mpPLAudit_hash = 42BC0584BB9509773E9A95FB14B53569
+2020/01/05 23:29:08 - wtl-metadata.0 - smd_md5 = E68CF4582D13756C61F0535DA12A27F0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGUID = 70393
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGZLPUSERID = 1
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGID = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFOLDERID = 71
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGISREAD = N
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDELETED = N
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSENDERAUTHENTICATED = N
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGENCMSGPWD = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGTYPE = 235
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGLANGUAGE = en
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFROM = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRECIPIENT = Undisclosed recipients:,
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSUBJECT = Your bank account setup for expense reimbursement
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGCATEGORY = 
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDATEPROCESSED = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDATECREATE = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDATESENT = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDATEEXPIRY = 
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGVAULTITEMID = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSIZE = 28818
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSIZECHARGED = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSOURCE = travelExpense.eml
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSTOREFORMATTYPE = skel
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFLAGS = -2147483568
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFLAGS2 = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGUPDATETIME = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRETENTIONID = 1
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRECID = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRECCATID = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - CC = 
+2020/01/05 23:29:08 - wtl-metadata.0 - BCC = 
+2020/01/05 23:29:08 - wtl-metadata.0 - SENDER = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:29:08 - wtl-metadata.0 - THREAD-TOPIC = Your bank account setup for expense reimbursement
+2020/01/05 23:29:08 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM = 
+2020/01/05 23:29:08 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT = 
+2020/01/05 23:29:08 - wtl-metadata.0 - triggerEventDate = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - jurisdiction = CH
+2020/01/05 23:29:08 - wtl-metadata.0 - mimeType = message/rfc822
+2020/01/05 23:29:08 - wtl-metadata.0 - processingCenterId = 811
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsAttachmentNotScannedStatus = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsBccList = 
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsSender = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGUID_1 = 70393
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGZLPUSERID_1 = 1
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFOLDERID_1 = 71
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGISREAD_1 = N
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDELETED_1 = N
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSENDERAUTHENTICATED_1 = N
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGENCMSGPWD_1 = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGTYPE_1 = 235
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGLANGUAGE_1 = en
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGCATEGORY_1 = 
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDATECREATE_1 = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGDATEEXPIRY_1 = 
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGVAULTITEMID_1 = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSIZE_1 = 28818
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSIZECHARGED_1 = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSOURCE_1 = travelExpense.eml
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGSTOREFORMATTYPE_1 = skel
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFLAGS_1 = -2147483568
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGFLAGS2_1 = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGUPDATETIME_1 = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRETENTIONID_1 = 1
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRECID_1 = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - MSGRECCATID_1 = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM_1 = 
+2020/01/05 23:29:08 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT_1 = 
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsReceivedDateTime = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsFromList = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsNumberOfRecipients = 
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsCcList = 
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsToList = Undisclosed recipients:,
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsSendDateTime = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsThreadTopic = Your bank account setup for expense reimbursement
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsFailedDecryption = 0
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsSubject = Your bank account setup for expense reimbursement
+2020/01/05 23:29:08 - wtl-metadata.0 - dhmStatus = active
+2020/01/05 23:29:08 - wtl-metadata.0 - dhmType = technical
+2020/01/05 23:29:08 - wtl-metadata.0 - dhmPreservationNumber = AA40609_2019
+2020/01/05 23:29:08 - wtl-metadata.0 - dhmSetByUser = T999999
+2020/01/05 23:29:08 - wtl-metadata.0 - dhmSetTimeStamp = 2019-12-20T14:35:02.317+0000
+2020/01/05 23:29:08 - wtl-metadata.0 - legacyArchiveReferenceCode = AA40609
+2020/01/05 23:29:08 - wtl-metadata.0 - legacyArchiveReferenceRegion = CH
+2020/01/05 23:29:08 - wtl-metadata.0 - legacyArchiveReferenceInstanceCode = AT24481
+2020/01/05 23:29:08 - wtl-metadata.0 - eCommsLegacyRecordId = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:29:08 - wtl-metadata.0 - migrationPlatformEnrichedMetadata = &amp;lt;migrationPlatformEnrichedMetadata&amp;gt;&amp;lt;platform annot=&quot;default&quot;&amp;gt;&amp;lt;triggerEventDate&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/triggerEventDate&amp;gt;&amp;lt;jurisdiction&amp;gt;CH&amp;lt;/jurisdiction&amp;gt;&amp;lt;mimeType&amp;gt;message/rfc822&amp;lt;/mimeType&amp;gt;&amp;lt;processingCenterId&amp;gt;811&amp;lt;/processingCenterId&amp;gt;&amp;lt;/platform&amp;gt;&amp;lt;custom annot=&quot;default&quot;&amp;gt;&amp;lt;eCommsAttachmentNotScannedStatus&amp;gt;0&amp;lt;/eCommsAttachmentNotScannedStatus&amp;gt;&amp;lt;eCommsBccList/&amp;gt;&amp;lt;eCommsSender&amp;gt;Aleksandra Nowak &amp;amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsSender&amp;gt;&amp;lt;legacyArchiveSourceMetadata&amp;gt;&amp;lt;MSGUID&amp;gt;70393&amp;lt;/MSGUID&amp;gt;&amp;lt;MSGZLPUSERID&amp;gt;1&amp;lt;/MSGZLPUSERID&amp;gt;&amp;lt;MSGFOLDERID&amp;gt;71&amp;lt;/MSGFOLDERID&amp;gt;&amp;lt;MSGISREAD&amp;gt;N&amp;lt;/MSGISREAD&amp;gt;&amp;lt;MSGDELETED&amp;gt;N&amp;lt;/MSGDELETED&amp;gt;&amp;lt;MSGSENDERAUTHENTICATED&amp;gt;N&amp;lt;/MSGSENDERAUTHENTICATED&amp;gt;&amp;lt;MSGENCMSGPWD&amp;gt;6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91&amp;lt;/MSGENCMSGPWD&amp;gt;&amp;lt;MSGTYPE&amp;gt;235&amp;lt;/MSGTYPE&amp;gt;&amp;lt;MSGLANGUAGE&amp;gt;en&amp;lt;/MSGLANGUAGE&amp;gt;&amp;lt;MSGCATEGORY/&amp;gt;&amp;lt;MSGDATECREATE&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/MSGDATECREATE&amp;gt;&amp;lt;MSGDATEEXPIRY/&amp;gt;&amp;lt;MSGVAULTITEMID&amp;gt;A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA&amp;lt;/MSGVAULTITEMID&amp;gt;&amp;lt;MSGSIZE&amp;gt;28818&amp;lt;/MSGSIZE&amp;gt;&amp;lt;MSGSIZECHARGED&amp;gt;0&amp;lt;/MSGSIZECHARGED&amp;gt;&amp;lt;MSGSOURCE&amp;gt;travelExpense.eml&amp;lt;/MSGSOURCE&amp;gt;&amp;lt;MSGSTOREFORMATTYPE&amp;gt;skel&amp;lt;/MSGSTOREFORMATTYPE&amp;gt;&amp;lt;MSGFLAGS&amp;gt;-2147483568&amp;lt;/MSGFLAGS&amp;gt;&amp;lt;MSGFLAGS2&amp;gt;0&amp;lt;/MSGFLAGS2&amp;gt;&amp;lt;MSGUPDATETIME&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/MSGUPDATETIME&amp;gt;&amp;lt;MSGRETENTIONID&amp;gt;1&amp;lt;/MSGRETENTIONID&amp;gt;&amp;lt;MSGRECID&amp;gt;0&amp;lt;/MSGRECID&amp;gt;&amp;lt;MSGRECCATID&amp;gt;0&amp;lt;/MSGRECCATID&amp;gt;&amp;lt;X-ZL-ENVELOPE-FROM/&amp;gt;&amp;lt;X-ZL-ENVELOPE-RCPT/&amp;gt;&amp;lt;/legacyArchiveSourceMetadata&amp;gt;&amp;lt;eCommsReceivedDateTime&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/eCommsReceivedDateTime&amp;gt;&amp;lt;eCommsFromList&amp;gt;T&amp;amp;amp;E Support-EMEA &amp;amp;lt;TESupport.EMEA@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsFromList&amp;gt;&amp;lt;eCommsNumberOfRecipients calculationFailed=&quot;true&quot;/&amp;gt;&amp;lt;eCommsCcList/&amp;gt;&amp;lt;eCommsToList&amp;gt;Undisclosed recipients:,&amp;lt;/eCommsToList&amp;gt;&amp;lt;eCommsSendDateTime&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/eCommsSendDateTime&amp;gt;&amp;lt;eCommsThreadTopic&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsThreadTopic&amp;gt;&amp;lt;eCommsFailedDecryption&amp;gt;0&amp;lt;/eCommsFailedDecryption&amp;gt;&amp;lt;eCommsSubject&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsSubject&amp;gt;&amp;lt;/custom&amp;gt;&amp;lt;destruction-hold annot=&quot;destruction-hold&quot;&amp;gt;&amp;lt;dhmStatus&amp;gt;active&amp;lt;/dhmStatus&amp;gt;&amp;lt;dhmType&amp;gt;technical&amp;lt;/dhmType&amp;gt;&amp;lt;dhmPreservationNumber&amp;gt;AA40609_2019&amp;lt;/dhmPreservationNumber&amp;gt;&amp;lt;dhmApplied&amp;gt;&amp;lt;dhmSetByUser&amp;gt;T999999&amp;lt;/dhmSetByUser&amp;gt;&amp;lt;dhmSetTimeStamp&amp;gt;2019-12-20T14:35:02.317+0000&amp;lt;/dhmSetTimeStamp&amp;gt;&amp;lt;/dhmApplied&amp;gt;&amp;lt;/destruction-hold&amp;gt;&amp;lt;legacyArchiveReference annot=&quot;migration-history&quot;&amp;gt;&amp;lt;legacyArchiveReferenceCode&amp;gt;AA40609&amp;lt;/legacyArchiveReferenceCode&amp;gt;&amp;lt;legacyArchiveReferenceRegion&amp;gt;CH&amp;lt;/legacyArchiveReferenceRegion&amp;gt;&amp;lt;legacyArchiveReferenceInstanceCode&amp;gt;AT24481&amp;lt;/legacyArchiveReferenceInstanceCode&amp;gt;&amp;lt;eCommsLegacyRecordId&amp;gt;I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB&amp;lt;/eCommsLegacyRecordId&amp;gt;&amp;lt;/legacyArchiveReference&amp;gt;&amp;lt;/migrationPlatformEnrichedMetadata&amp;gt;
+2020/01/05 23:29:08 - wtl-metadata.0 - 
+2020/01/05 23:29:08 - wtl-metadata.0 - ====================
+2020/01/05 23:29:08 - frmla-verify-target-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:08 - wtl-metadata.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:13 - test-release-xml - Dispatching started for transformation [test-release-xml]
+2020/01/05 23:29:13 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/05 23:29:13 - js-extract-payload-md5.0 - Optimization level set to 9.
+2020/01/05 23:29:13 - js-extract-payload-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:13 - gdxml-metadata.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:13 - wtl-metadata.0 - 
+2020/01/05 23:29:13 - wtl-metadata.0 - ------------&amp;gt; Linenr 1------------------------------
+2020/01/05 23:29:13 - wtl-metadata.0 - tr-rest-call-hci-get-auth-token
+2020/01/05 23:29:13 - wtl-metadata.0 - 
+2020/01/05 23:29:13 - wtl-metadata.0 - enrichedmd_md5 = 80BE6E9ADA100843C4A58B40FC8B4B5C
+2020/01/05 23:29:13 - wtl-metadata.0 - mpTEAudit_hash = 9CCB0A23E44D8432B200EA0C3BBBB911
+2020/01/05 23:29:13 - wtl-metadata.0 - enrichedmetadata_passed = N
+2020/01/05 23:29:13 - wtl-metadata.0 - jnlmd_md5 = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:29:13 - wtl-metadata.0 - mpJNLAudit_hash = 14D9F3C28D775704DE20EE051057336D
+2020/01/05 23:29:13 - wtl-metadata.0 - journalmetadata_passed = Y
+2020/01/05 23:29:13 - wtl-metadata.0 - mpExtractAudit_hash = 3E4C4CA27E6E1B8EA7AFCFA3076B047E
+2020/01/05 23:29:13 - wtl-metadata.0 - mpPLAudit_hash = 42BC0584BB9509773E9A95FB14B53569
+2020/01/05 23:29:13 - wtl-metadata.0 - smd_md5 = E68CF4582D13756C61F0535DA12A27F0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGUID = 70393
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGZLPUSERID = 1
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGID = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFOLDERID = 71
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGISREAD = N
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDELETED = N
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSENDERAUTHENTICATED = N
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGENCMSGPWD = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGTYPE = 235
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGLANGUAGE = en
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFROM = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRECIPIENT = Undisclosed recipients:,
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSUBJECT = Your bank account setup for expense reimbursement
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGCATEGORY = 
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDATEPROCESSED = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDATECREATE = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDATESENT = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDATEEXPIRY = 
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGVAULTITEMID = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSIZE = 28818
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSIZECHARGED = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSOURCE = travelExpense.eml
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSTOREFORMATTYPE = skel
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFLAGS = -2147483568
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFLAGS2 = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGUPDATETIME = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRETENTIONID = 1
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRECID = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRECCATID = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - CC = 
+2020/01/05 23:29:13 - wtl-metadata.0 - BCC = 
+2020/01/05 23:29:13 - wtl-metadata.0 - SENDER = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:29:13 - wtl-metadata.0 - THREAD-TOPIC = Your bank account setup for expense reimbursement
+2020/01/05 23:29:13 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM = 
+2020/01/05 23:29:13 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT = 
+2020/01/05 23:29:13 - wtl-metadata.0 - triggerEventDate = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - jurisdiction = CH
+2020/01/05 23:29:13 - wtl-metadata.0 - mimeType = message/rfc822
+2020/01/05 23:29:13 - wtl-metadata.0 - processingCenterId = 811
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsAttachmentNotScannedStatus = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsBccList = 
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsSender = Aleksandra Nowak &amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;gt;
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGUID_1 = 70393
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGZLPUSERID_1 = 1
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFOLDERID_1 = 71
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGISREAD_1 = N
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDELETED_1 = N
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSENDERAUTHENTICATED_1 = N
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGENCMSGPWD_1 = 6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGTYPE_1 = 235
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGLANGUAGE_1 = en
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGCATEGORY_1 = 
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDATECREATE_1 = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGDATEEXPIRY_1 = 
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGVAULTITEMID_1 = A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSIZE_1 = 28818
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSIZECHARGED_1 = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSOURCE_1 = travelExpense.eml
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGSTOREFORMATTYPE_1 = skel
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFLAGS_1 = -2147483568
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGFLAGS2_1 = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGUPDATETIME_1 = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRETENTIONID_1 = 1
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRECID_1 = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - MSGRECCATID_1 = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - X-ZL-ENVELOPE-FROM_1 = 
+2020/01/05 23:29:13 - wtl-metadata.0 - X-ZL-ENVELOPE-RCPT_1 = 
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsReceivedDateTime = 2019-11-08T17:13:33.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsFromList = T&amp;amp;E Support-EMEA &amp;lt;TESupport.EMEA@hitachivantara.com&amp;gt;
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsNumberOfRecipients = 
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsCcList = 
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsToList = Undisclosed recipients:,
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsSendDateTime = 2019-10-29T10:57:54.000+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsThreadTopic = Your bank account setup for expense reimbursement
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsFailedDecryption = 0
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsSubject = Your bank account setup for expense reimbursement
+2020/01/05 23:29:13 - wtl-metadata.0 - dhmStatus = active
+2020/01/05 23:29:13 - wtl-metadata.0 - dhmType = technical
+2020/01/05 23:29:13 - wtl-metadata.0 - dhmPreservationNumber = AA40609_2019
+2020/01/05 23:29:13 - wtl-metadata.0 - dhmSetByUser = T999999
+2020/01/05 23:29:13 - wtl-metadata.0 - dhmSetTimeStamp = 2019-12-20T14:35:02.317+0000
+2020/01/05 23:29:13 - wtl-metadata.0 - legacyArchiveReferenceCode = AA40609
+2020/01/05 23:29:13 - wtl-metadata.0 - legacyArchiveReferenceRegion = CH
+2020/01/05 23:29:13 - wtl-metadata.0 - legacyArchiveReferenceInstanceCode = AT24481
+2020/01/05 23:29:13 - wtl-metadata.0 - eCommsLegacyRecordId = I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB
+2020/01/05 23:29:13 - wtl-metadata.0 - migrationPlatformEnrichedMetadata = &amp;lt;migrationPlatformEnrichedMetadata&amp;gt;&amp;lt;platform annot=&quot;default&quot;&amp;gt;&amp;lt;triggerEventDate&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/triggerEventDate&amp;gt;&amp;lt;jurisdiction&amp;gt;CH&amp;lt;/jurisdiction&amp;gt;&amp;lt;mimeType&amp;gt;message/rfc822&amp;lt;/mimeType&amp;gt;&amp;lt;processingCenterId&amp;gt;811&amp;lt;/processingCenterId&amp;gt;&amp;lt;/platform&amp;gt;&amp;lt;custom annot=&quot;default&quot;&amp;gt;&amp;lt;eCommsAttachmentNotScannedStatus&amp;gt;0&amp;lt;/eCommsAttachmentNotScannedStatus&amp;gt;&amp;lt;eCommsBccList/&amp;gt;&amp;lt;eCommsSender&amp;gt;Aleksandra Nowak &amp;amp;lt;Aleksandra.Nowak@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsSender&amp;gt;&amp;lt;legacyArchiveSourceMetadata&amp;gt;&amp;lt;MSGUID&amp;gt;70393&amp;lt;/MSGUID&amp;gt;&amp;lt;MSGZLPUSERID&amp;gt;1&amp;lt;/MSGZLPUSERID&amp;gt;&amp;lt;MSGFOLDERID&amp;gt;71&amp;lt;/MSGFOLDERID&amp;gt;&amp;lt;MSGISREAD&amp;gt;N&amp;lt;/MSGISREAD&amp;gt;&amp;lt;MSGDELETED&amp;gt;N&amp;lt;/MSGDELETED&amp;gt;&amp;lt;MSGSENDERAUTHENTICATED&amp;gt;N&amp;lt;/MSGSENDERAUTHENTICATED&amp;gt;&amp;lt;MSGENCMSGPWD&amp;gt;6B703AD5CAF9DCD6ECCB2A32E02FE9434753D37125013EB955B38B896AD94794AC6EF1E63ED7AF6896A6FF2B1D789B03D30056104489C027EDDC50E3F9AEDA99FF3C91&amp;lt;/MSGENCMSGPWD&amp;gt;&amp;lt;MSGTYPE&amp;gt;235&amp;lt;/MSGTYPE&amp;gt;&amp;lt;MSGLANGUAGE&amp;gt;en&amp;lt;/MSGLANGUAGE&amp;gt;&amp;lt;MSGCATEGORY/&amp;gt;&amp;lt;MSGDATECREATE&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/MSGDATECREATE&amp;gt;&amp;lt;MSGDATEEXPIRY/&amp;gt;&amp;lt;MSGVAULTITEMID&amp;gt;A1JRXB3HS1AQIW2D4ROKBG05GRTNZ1QGA&amp;lt;/MSGVAULTITEMID&amp;gt;&amp;lt;MSGSIZE&amp;gt;28818&amp;lt;/MSGSIZE&amp;gt;&amp;lt;MSGSIZECHARGED&amp;gt;0&amp;lt;/MSGSIZECHARGED&amp;gt;&amp;lt;MSGSOURCE&amp;gt;travelExpense.eml&amp;lt;/MSGSOURCE&amp;gt;&amp;lt;MSGSTOREFORMATTYPE&amp;gt;skel&amp;lt;/MSGSTOREFORMATTYPE&amp;gt;&amp;lt;MSGFLAGS&amp;gt;-2147483568&amp;lt;/MSGFLAGS&amp;gt;&amp;lt;MSGFLAGS2&amp;gt;0&amp;lt;/MSGFLAGS2&amp;gt;&amp;lt;MSGUPDATETIME&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/MSGUPDATETIME&amp;gt;&amp;lt;MSGRETENTIONID&amp;gt;1&amp;lt;/MSGRETENTIONID&amp;gt;&amp;lt;MSGRECID&amp;gt;0&amp;lt;/MSGRECID&amp;gt;&amp;lt;MSGRECCATID&amp;gt;0&amp;lt;/MSGRECCATID&amp;gt;&amp;lt;X-ZL-ENVELOPE-FROM/&amp;gt;&amp;lt;X-ZL-ENVELOPE-RCPT/&amp;gt;&amp;lt;/legacyArchiveSourceMetadata&amp;gt;&amp;lt;eCommsReceivedDateTime&amp;gt;2019-11-08T17:13:33.000+0000&amp;lt;/eCommsReceivedDateTime&amp;gt;&amp;lt;eCommsFromList&amp;gt;T&amp;amp;amp;E Support-EMEA &amp;amp;lt;TESupport.EMEA@hitachivantara.com&amp;amp;gt;&amp;lt;/eCommsFromList&amp;gt;&amp;lt;eCommsNumberOfRecipients calculationFailed=&quot;true&quot;/&amp;gt;&amp;lt;eCommsCcList/&amp;gt;&amp;lt;eCommsToList&amp;gt;Undisclosed recipients:,&amp;lt;/eCommsToList&amp;gt;&amp;lt;eCommsSendDateTime&amp;gt;2019-10-29T10:57:54.000+0000&amp;lt;/eCommsSendDateTime&amp;gt;&amp;lt;eCommsThreadTopic&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsThreadTopic&amp;gt;&amp;lt;eCommsFailedDecryption&amp;gt;0&amp;lt;/eCommsFailedDecryption&amp;gt;&amp;lt;eCommsSubject&amp;gt;Your bank account setup for expense reimbursement&amp;lt;/eCommsSubject&amp;gt;&amp;lt;/custom&amp;gt;&amp;lt;destruction-hold annot=&quot;destruction-hold&quot;&amp;gt;&amp;lt;dhmStatus&amp;gt;active&amp;lt;/dhmStatus&amp;gt;&amp;lt;dhmType&amp;gt;technical&amp;lt;/dhmType&amp;gt;&amp;lt;dhmPreservationNumber&amp;gt;AA40609_2019&amp;lt;/dhmPreservationNumber&amp;gt;&amp;lt;dhmApplied&amp;gt;&amp;lt;dhmSetByUser&amp;gt;T999999&amp;lt;/dhmSetByUser&amp;gt;&amp;lt;dhmSetTimeStamp&amp;gt;2019-12-20T14:35:02.317+0000&amp;lt;/dhmSetTimeStamp&amp;gt;&amp;lt;/dhmApplied&amp;gt;&amp;lt;/destruction-hold&amp;gt;&amp;lt;legacyArchiveReference annot=&quot;migration-history&quot;&amp;gt;&amp;lt;legacyArchiveReferenceCode&amp;gt;AA40609&amp;lt;/legacyArchiveReferenceCode&amp;gt;&amp;lt;legacyArchiveReferenceRegion&amp;gt;CH&amp;lt;/legacyArchiveReferenceRegion&amp;gt;&amp;lt;legacyArchiveReferenceInstanceCode&amp;gt;AT24481&amp;lt;/legacyArchiveReferenceInstanceCode&amp;gt;&amp;lt;eCommsLegacyRecordId&amp;gt;I3XMJRSM1RMEMAL5Q3J2P5SAYWD0A04VB&amp;lt;/eCommsLegacyRecordId&amp;gt;&amp;lt;/legacyArchiveReference&amp;gt;&amp;lt;/migrationPlatformEnrichedMetadata&amp;gt;
+2020/01/05 23:29:13 - wtl-metadata.0 - 
+2020/01/05 23:29:13 - wtl-metadata.0 - ====================
+2020/01/05 23:29:13 - frmla-verify-target-md5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2020/01/05 23:29:13 - wtl-metadata.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+&lt;/system-out&gt;
+&lt;/pdi-result&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
