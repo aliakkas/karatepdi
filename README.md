@@ -17,9 +17,8 @@ or
 ```
 * Check the stdout to make sure no exceptions are thrown
 
-Here are some endpoints you can call:
 
-### Get information about system health, configurations, etc.
+### Some endpoints you can call:
 
 ```
 http://127.0.0.1:9999/login
