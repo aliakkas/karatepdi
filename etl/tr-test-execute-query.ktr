@@ -471,7 +471,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>${KETTLE_UBS_MMT_MARIADB_PORT}</attribute>
+        <attribute>${KETTLE_MARIADB_PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
