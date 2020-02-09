@@ -438,24 +438,24 @@
   </notepads>
   <connection>
     <name>mmt</name>
-    <server>${KETTLE_UBS_MMT_MARIADB_HOSTNAME}</server>
+    <server>${KETTLE_MARIADB_HOSTNAME}</server>
     <type>MARIADB</type>
     <access>Native</access>
-    <database>${KETTLE_UBS_MMT_MARIADB_DB}</database>
-    <port>${KETTLE_UBS_MMT_MARIADB_PORT}</port>
-    <username>${KETTLE_UBS_MMT_MARIADB_USERNAME}</username>
-    <password>${KETTLE_UBS_MMT_MARIADB_PASSWORD}</password>
+    <database>${KETTLE_MARIADB_DB}</database>
+    <port>${KETTLE_MARIADB_PORT}</port>
+    <username>${KETTLE_MARIADB_USERNAME}</username>
+    <password>${KETTLE_MARIADB_PASSWORD}</password>
     <servername />
     <data_tablespace />
     <index_tablespace />
     <attributes>
       <attribute>
         <code>EXTRA_OPTION_MARIADB.trustServerCertificate</code>
-        <attribute>${KETTLE_UBS_MMT_MARIADB_TRUSTSERVERCERTIFICATE}</attribute>
+        <attribute>${KETTLE_MARIADB_TRUSTSERVERCERTIFICATE}</attribute>
       </attribute>
       <attribute>
         <code>EXTRA_OPTION_MARIADB.useSSL</code>
-        <attribute>${KETTLE_UBS_MMT_MARIADB_USESSL}</attribute>
+        <attribute>${KETTLE_MARIADB_USESSL}</attribute>
       </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
