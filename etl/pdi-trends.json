@@ -1,0 +1,16 @@
+{
+  "buildNumbers" : [ "RC 1.0.0", "RC 1.0.0", "RC 1.0.0" ],
+  "passedFeatures" : [ 0, 0, 0 ],
+  "failedFeatures" : [ 1, 2, 3 ],
+  "totalFeatures" : [ 1, 2, 3 ],
+  "passedScenarios" : [ 0, 0, 0 ],
+  "failedScenarios" : [ 1, 2, 3 ],
+  "totalScenarios" : [ 1, 2, 3 ],
+  "passedSteps" : [ 3, 6, 9 ],
+  "failedSteps" : [ 2, 4, 6 ],
+  "skippedSteps" : [ 12, 24, 36 ],
+  "pendingSteps" : [ 0, 0, 0 ],
+  "undefinedSteps" : [ 0, 0, 0 ],
+  "totalSteps" : [ 17, 34, 51 ],
+  "durations" : [ 140435305, 164309536, 184373853 ]
+}

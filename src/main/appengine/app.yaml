@@ -7,8 +7,6 @@ env_variables:
 handlers:
 - url: /.*
   script: this field is required, but ignored
-
-# Application Resources
 resources:
   cpu: 2
   memory_gb: 2
@@ -17,5 +15,5 @@ resources:
   - name: ramdisk1
     volume_type: tmpfs
     size_gb: 0.5
-manual_scaling: 
+manual_scaling:
   instances: 1
