@@ -20,7 +20,7 @@
         <commons-lang.version>2.6</commons-lang.version>
         <encoder.version>1.2</encoder.version>
         <guava.version>17.0</guava.version>
-        <poi.version>3.17</poi.version>
+        <poi.version>4.1.1</poi.version>
         <pentaho-kettle.version>8.2.0.7-719</pentaho-kettle.version>
     </properties>
 
